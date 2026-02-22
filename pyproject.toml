@@ -1,0 +1,27 @@
+[project]
+name = "nonebot-plugin-l4d2-bot"
+version = "1.0.4"
+description = "求生之路2 SourceMod 文件传输桥接插件"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    {name = "落樱"},
+]
+dependencies = [
+    "nonebot2[fastapi]>=2.3.0",
+    "nonebot-adapter-onebot>=2.4.0",
+    "pydantic>=2.0",
+    "httpx>=0.27",
+    "aiofiles>=24.1",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["nonebot_plugin_l4d2_bot"]
+
+[tool.nonebot]
+plugins = ["nonebot_plugin_l4d2_bot"]
